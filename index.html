@@ -1,12 +1,3 @@
-<?php
-       'cotenna';
-      $nome = 'Davide';
-      $cognome = 'Marchini';
-
-      echo $nome . ' Yuri  '  .  $cognome
-    ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,8 +16,16 @@
 
 <body>
     <form action="./result.php" method="GET">
-
-        <button>Ciao</button>
+        <div class="mb-3 mt-4 ml-4">
+            <label for="exampleFormControlInput1" class="form-label">Indirizzo Email</label>
+            <input type="text" name="testo" class="form-control" id="exampleFormControlInput1"
+                placeholder="nome@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Inserire Testo</label>
+            <textarea name="frase" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit">invio</button>
     </form>
 </body>
 
